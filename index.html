@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №9</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header class="page-header">
+        <h1>Лабораторна робота №9</h1>
+        <p class="subtitle">Блокова модель документа (CSS Box Model). Відступи та межі.
+        </p>
+    </header>
+
+    <section class="info-section">
+        <h2>Що демонструє ця сторінка</h2>
+        <p>
+            Ця сторінка створена для демонстрації блокової моделі CSS. У роботі показано,
+            як поводяться content, padding, border і margin, як працює глобальне скидання
+            стилів, як центрується контейнер на сторінці та як за допомогою відступів і меж
+            можна створювати охайні картки товарів.
+        </p>
+    </section>
+
+    <section class="info-section">
+        <h2>Box Model</h2>
+        <div class="card">
+            <h3>Демонстраційний блок</h3>
+            <p>
+                У цього блоку є фон, рамка, внутрішній відступ і зовнішній відступ.
+                Саме на ньому зручно дивитися різницю між padding і margin у DevTools.
+            </p>
+            <p>
+                Якщо відкрити інструменти розробника і навести курсор на цей елемент,
+                можна побачити кольорову схему блокової моделі.
+            </p>
+        </div>
+        <p class="note">
+            Що написано в завданні: Відкрийте інструменти розробника в браузері (F12 або права кнопка -> Inspect). Наведіть мишку на ваш елемент в коді. Ви побачите різнокольорову схему: помаранчевий (margin), жовтий (border), зелений (padding), синій (content).
+        </p>
+    </section>
+
+    <section class="info-section">
+        <h2>Картки товарів</h2>
+        <p>
+            Нижче показано приклад трьох карток, побудованих через блокову модель.
+        </p>
+
+        <div class="products">
+            <article class="product-item">
+                <div class="product-image-box">
+                    <img src="garmin.jpeg" alt="Смартгодинник Garmin" class="product-image">
+                </div>
+                <h3>Garmin Smart Watch</h3>
+                <p>
+
+                    Найсучасніший тактичний смарт-годинник.
+                    З tactix 8 ви будете на висоті. Це оптимальний тактичний смарт-годинник з дисплеєм, що заряджається від сонячної енергії, з титановим безелем, сапфіровим склом і можливістю пірнання на глибину до 40 метрів.
+                </p>
+                <p class="price">Ціна: 74 000 грн</p>
+                <button type="button">Купити</button>
+            </article>
+
+            <article class="product-item">
+                <div class="product-image-box">
+                    <img src="marshall.jpeg" alt="Портативна колонка Marshall" class="product-image">
+                </div>
+                <h3>Marshall Speaker</h3>
+                <p>
+                    Портативна колонка Marshall.
+                    Emberton II видає насичений, чистий і гучний звук, як і замислювалося виконавцем. Два 2-дюймових широкополосних динаміка і два пасивних випромінювача забезпечують важкий звук Marshall, який ви знаєте і любите.
+                </p>
+                <p class="price">Ціна: 5 499 грн</p>
+                <button type="button">Купити</button>
+            </article>
+
+            <article class="product-item">
+                <div class="product-image-box">
+                    <img src="samsung.jpeg" alt="Навушники Samsung" class="product-image">
+                </div>
+                <h3>Samsung Earbuds</h3>
+                <p>
+                    Навушники Samsung Galaxy Buds3 Pro.
+                    Звучання нового покоління. Чистота звуку, яка дає змогу почути все до дрібниць, – ось на що здатна 24-бітна технологія CODEC. Відчуйте революційно нову якість звучання завдяки системі шумопоглинанню на базі технології Galaxy AI та функції перекладу в режимі реального часу.
+                </p>
+                <p class="price">Ціна: 9 799 грн</p>
+                <button type="button">Купити</button>
+            </article>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <h2>Висновок</h2>
+        <p>
+            У цій лабораторній роботі продемонстровано, що будь-який HTML-елемент у CSS
+            розглядається як прямокутний блок. Саме правильне керування шириною, padding,
+            border і margin дозволяє будувати акуратний інтерфейс без зламаної верстки.
+            Використання box-sizing border-box робить розрахунок розмірів набагато
+            зручнішим і передбачуванішим.
+        </p>
+    </section>
+</div>
+</body>
+</html>
